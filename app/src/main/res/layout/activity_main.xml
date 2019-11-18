@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/content_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -32,8 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
+        android:layout_marginLeft="16dp"
         android:text="Rxjava"
-        app:layout_constraintEnd_toStartOf="@+id/inject_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,9 +42,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
+        android:layout_marginRight="16dp"
         android:text="Rxjust"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/inject_btn"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/eventbus_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EventBus"
+        app:layout_constraintEnd_toStartOf="@+id/rxjust_btn"
+        app:layout_constraintStart_toEndOf="@+id/rxjava_btn"
+        app:layout_constraintTop_toTopOf="@+id/rxjust_btn" />
 
 </android.support.constraint.ConstraintLayout>
